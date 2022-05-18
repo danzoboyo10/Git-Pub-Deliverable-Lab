@@ -11,7 +11,9 @@ app.get('/', (req, res)=> {
 })
 app.get('/drinks/', (req, res)=> {
     // res.send(drinks)
-    res.render('drinks_index.ejs', {allDrinks: drinks})
+    // res.render('drinks_index.ejs', {allDrinks: drinks})
+    res.render('drinks_show.ejs', {allDrinks: drinks})
+
 
 })
 app.get('/drinks/:id/', (req, res)=> {

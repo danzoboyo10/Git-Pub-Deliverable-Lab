@@ -7,10 +7,42 @@
     <title>Document</title>
 </head>
 <body>
-    <h1><%= drink.name %> Show Page</h1>
-    <p>This is a <%= drink.price %> price</p>
-    <p>This is a <%= drink.image %> image</p>
+    <h1> At foo bar</h1>
+    
+<!--
+There's an h3tag that should display the price of the drink
+Add an anchor tag with the text of back, that will take you back to your index.ejs view -->
+    <% for (let i = 0; i < allDrinks.length; i++) { %>
+        <p> 
+           <a href="/drinks/<%= i %>">
+            <%= allDrinks[i].name %>
+           </a> 
+        </p>
+    <% } %>
+    <h2> <%= drinks.name %> Drinks Name</h2>
+    <img src = "" <%= drinks.image %> Drink Image>
+    <h3> <%= drinks.price %> Drinks Price</h3>
+    <a href = "/drinks"> Back to index.ejs View</a>
 
-    <a href = "/drinks"> Back to Drinks Index</a>
+
+    <ul>
+       <a href = "/drinks/0" ></a><li> Cruddy Mary</li></a>
+       <a href = "/drinks/1" ></a> <li> Index on The Beach </li></a>
+       <a href = "/drinks/2" ></a> <li> Hack & Coke</li></a>
+       <a href = "/drinks/3" ></a> <li> Whiskey-value Pair</li></a>
+       <a href = "/drinks/4" ><li> 404 Horsemen</li></a>
+       <a href = "/drinks/5" ><li> If StateMint Julep</li></a>
+       <a href = "/drinks/6" ><li> APIPA</li></a>
+       <a href = "/drinks/7" ><li> Node to Joy</li></a>
+
+    </ul>
+
+    
+<style type="text/css">
+    body {
+      color:paleturquoise;
+      background-color: lightcoral;
+    }
+  </style>
 </body>
 </html>
