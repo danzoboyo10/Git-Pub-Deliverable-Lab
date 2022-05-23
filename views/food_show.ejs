@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>See Drinks Details</title>
+    <title>See Food Details</title>
 </head>
 <body>
-    <h1> At foo bar</h1>
-    <h2> <%= allDrinks.name %></h2>
+    <h1> At food bar</h1>
+    <h2> <%= allFood.name %></h2>
     
 <!--
 There's an h3tag that should display the price of the drink
 Add an anchor tag with the text of back, that will take you back to your index.ejs view -->
     <h3> Price:</h3>
     <ul>
-       <li>  <%= allDrinks.price %></li>
+       <li>  <%= allFood.price %></li>
           
+    
     </ul>
 
-    <img src = "<%= allDrinks.image %>.jpg" />
-    <br>
+    <img src = "<%= allFood.image %>" />
+    
 
 
-
-    <a href = "/drinks/"> Back to index.ejs View</a>
+    <a href = "/food/"> Back to index.ejs View</a>
 
     
 <style type="text/css">
